@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.calc {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.visor {
+  margin-top: 16px;
+  padding: 12px;
+  background: #222;
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  min-height: 24px;
+}
+
+.visor.erro {
+  color: #ff6b6b;
+  font-size: 16px;
+  text-align: left;
+}
