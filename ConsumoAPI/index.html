@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consumindo APIs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Consulta de APIs</h1>
+    <p class="sub">Escolha uma API, digite o termo e veja o resultado.</p>
+
+    <div class="seletor" role="tablist" aria-label="Escolha a API">
+      <button class="aba ativa" data-api="pokemon" role="tab" aria-selected="true">Pokémon</button>
+      <button class="aba" data-api="cep" role="tab" aria-selected="false">CEP</button>
+      <button class="aba" data-api="rick" role="tab" aria-selected="false">Rick and Morty</button>
+    </div>
+
+    <div class="busca">
+      <label for="entrada" id="rotulo">Nome ou número do Pokémon</label>
+      <div class="linha">
+        <input id="entrada" type="text" placeholder="pikachu" autocomplete="off">
+        <button id="buscar">Buscar</button>
+      </div>
+    </div>
+
+    <section id="resultado" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
